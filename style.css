@@ -69,21 +69,7 @@ footer > button {
   max-width: 200px;
 }
 
-@media (max-width: 900px) {
-  body{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-areas: 
-    "my-footer"
-    "my-footer"
-    "my-school"
-    "my-student"
-    "my-main"
-    "my-time"
-    "my-alumni"
-    "my-footer";
-   }
-}
+
 
   .school {
     grid-area: my-school;
@@ -114,6 +100,22 @@ footer > button {
   .student,
   .time {
     background-size: cover;
+  }
+
+  @media (max-width: 900px) {
+    body{
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, 1fr);
+      grid-template-areas: 
+      "my-header"
+      "my-header"
+      "my-school"
+      "my-student"
+      "my-main"
+      "my-time"
+      "my-alumni"
+      "my-footer";
+     }
   }
 
   
