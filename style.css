@@ -72,7 +72,7 @@ footer > button {
 @media (max-width: 900px) {
   body{
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8*1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-template-areas: 
     "my-footer"
     "my-footer"
@@ -84,6 +84,7 @@ footer > button {
     "my-footer";
    }
 }
+
   .school {
     grid-area: my-school;
     background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/d8ce469044b958508f4bdbab/blueschoolbackpackwithessentialsupplies_232148207678.jpg);
@@ -114,6 +115,8 @@ footer > button {
   .time {
     background-size: cover;
   }
+
+  
 
   
 
